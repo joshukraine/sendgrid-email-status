@@ -23,7 +23,7 @@ class MessagesController < ApplicationController
 
   private
 
-  def message_attributes
-    params.require(:message).permit(:to, :subject, :body)
-  end
+    def message_attributes
+      params.require(:message).permit(:to, :subject, :body)
+    end
 end
